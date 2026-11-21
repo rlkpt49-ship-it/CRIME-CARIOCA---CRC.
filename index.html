@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b0b0d">
+<title>CRIME CARIOCA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--red:#e32636;--bg:#0b0b0d;--panel:#161619;--muted:#aaaab2;--white:#f7f7f8;--blue:#174b83}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,Arial,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:5;background:#0b0b0dee;border-bottom:1px solid #29292e;backdrop-filter:blur(12px)}
+nav{max-width:1120px;margin:auto;padding:15px 22px;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.brand{font:800 27px "Barlow Condensed",sans-serif;letter-spacing:1.5px}.brand span{color:var(--red)}
+.navlinks{display:flex;gap:22px;flex-wrap:wrap;font-size:13px;font-weight:700;color:#ddd}
+.navlinks a:hover{color:var(--red)}
+.hero{min-height:560px;display:grid;place-items:center;text-align:center;padding:85px 20px;background:radial-gradient(ellipse at 50% 0%,#8c172455,transparent 55%),linear-gradient(180deg,#1b1013,#0b0b0d 85%)}
+.eyebrow{color:#ff6874;text-transform:uppercase;letter-spacing:4px;font-size:12px;font-weight:800}
+h1,h2,h3{font-family:"Barlow Condensed",Impact,sans-serif;text-transform:uppercase;line-height:1.05}
+h1{font-size:clamp(58px,10vw,112px);letter-spacing:2px;margin:18px 0}h1 span{color:var(--red)}
+.hero p{max-width:610px;margin:0 auto 30px;color:#c7c7cc}
+.btn{display:inline-block;padding:13px 22px;border-radius:7px;font-weight:800;font-size:13px;letter-spacing:.4px;transition:.2s}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.15)}
+.discord{background:var(--blue);border:1px solid #3472b5;color:white}
+main{max-width:1120px;margin:auto;padding:20px 22px 70px}
+section{padding:68px 0;scroll-margin-top:75px}
+.section-head{text-align:center;margin-bottom:32px}
+.section-head h2{font-size:clamp(38px,6vw,58px);margin:8px 0}
+.section-head p{color:var(--muted);margin:0}
+.rule-grid,.vip-grid,.faction-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.card{background:var(--panel);border:1px solid #29292f;border-radius:12px;padding:20px}
+.rule-number{color:var(--red);font:800 24px "Barlow Condensed",sans-serif}
+.card h3{font-size:24px;margin:5px 0 8px}.card p{margin:0;color:#bdbdc4;font-size:14px}
+.vip-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.vip-card{position:relative;overflow:hidden}
+.vip-card:before{content:"";position:absolute;top:0;left:0;width:100%;height:3px;background:var(--red)}
+.vip-card .price{font:800 38px "Barlow Condensed",sans-serif;margin:12px 0}
+.vip-card .price small{font:600 14px Inter,sans-serif;color:var(--muted)}
+.buy{display:block;text-align:center;background:var(--red);padding:11px;border-radius:6px;font-size:13px;font-weight:800;margin-top:14px}
+.contact{text-align:center;color:#c8c8ce;font-size:11px;font-weight:800;letter-spacing:1.5px;margin-top:10px}
+.faction{display:flex;align-items:center;gap:12px}
+.dot{width:11px;height:11px;border-radius:50%;flex:none}
+.faction strong{display:block;font-size:15px}.faction span{color:var(--muted);font-size:13px}
+.cv .dot{background:#ed2939}.tcp .dot{background:#f3c623}.ada .dot{background:#2787e8}.mlc .dot{background:#f28b26}
+.faction-group{margin-bottom:14px}
+.faction-group h3{font-size:22px;margin:0 0 12px}
+.faction-group .card{display:grid;gap:13px}
+footer{border-top:1px solid #29292e;text-align:center;padding:25px 16px;color:#9999a1;font-size:12px;text-transform:lowercase}
+@media(max-width:760px){nav{align-items:flex-start;flex-direction:column}.navlinks{gap:14px}.vip-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.rule-grid,.vip-grid,.faction-grid{grid-template-columns:1fr}.hero{min-height:470px}}
+</style>
+</head>
+<body>
+<header><nav>
+<a class="brand" href="#inicio">CRIME <span>CARIOCA</span></a>
+<div class="navlinks"><a href="#regras">REGRAS</a><a href="#vip">COMPRE SEU VIP</a><a href="#favelas">FAVELAS</a><a href="#discord">DISCORD</a></div>
+</nav></header>
+
+<div class="hero" id="inicio"><div>
+<div class="eyebrow">Sua história começa aqui</div>
+<h1>CRIME <span>CARIOCA</span></h1>
+<p>Entre na cidade, conheça a comunidade e construa sua própria trajetória no nosso servidor.</p>
+<a class="btn discord" href="https://discord.gg/TqkuabrAe" target="_blank" rel="noopener noreferrer">ENTRAR NO DISCORD</a>
+</div></div>
+
+<main>
+<section id="regras">
+<div class="section-head"><div class="eyebrow">Leia antes de jogar</div><h2>Regras do servidor</h2><p>Respeite a comunidade para manter a experiência divertida para todos.</p></div>
+<div class="rule-grid">
+<article class="card"><div class="rule-number">01</div><h3>Respeito em primeiro lugar</h3><p>Não pratique preconceito, assédio, ameaças ou ofensas direcionadas a outros jogadores.</p></article>
+<article class="card"><div class="rule-number">02</div><h3>Sem trapaças</h3><p>É proibido usar hacks, exploits, bugs intencionais ou qualquer vantagem injusta.</p></article>
+<article class="card"><div class="rule-number">03</div><h3>Roleplay de qualidade</h3><p>Respeite as situações de RP e evite atitudes que prejudiquem a interpretação dos demais.</p></article>
+<article class="card"><div class="rule-number">04</div><h3>Sem spam ou divulgação</h3><p>Não faça spam, flood ou divulgação de outros servidores sem autorização da equipe.</p></article>
+<article class="card"><div class="rule-number">05</div><h3>Ouça a equipe</h3><p>Siga as orientações da moderação e use os canais corretos para dúvidas ou denúncias.</p></article>
+<article class="card"><div class="rule-number">06</div><h3>Proteja sua conta</h3><p>Não compartilhe senhas ou dados pessoais. Negociações devem seguir os canais oficiais.</p></article>
+</div>
+</section>
+
+<section id="vip">
+<div class="section-head"><div class="eyebrow">Vantagens especiais</div><h2>Compre seu VIP</h2><p>Escolha seu plano e fale com a equipe pelo Discord.</p></div>
+<div class="vip-grid">
+<article class="card vip-card"><h3>VIP Magnata</h3><div class="price">R$ 45 <small>/ único</small></div><a class="buy" href="https://discord.gg/TqkuabrAe" target="_blank" rel="noopener noreferrer">COMPRAR</a><div class="contact">FALE COM O SABIO</div></article>
+<article class="card vip-card"><h3>VIP Gold</h3><div class="price">R$ 30 <small>/ único</small></div><a class="buy" href="https://discord.gg/TqkuabrAe" target="_blank" rel="noopener noreferrer">COMPRAR</a><div class="contact">FALE COM O SABIO</div></article>
+<article class="card vip-card"><h3>VIP Prata</h3><div class="price">R$ 25 <small>/ único</small></div><a class="buy" href="https://discord.gg/TqkuabrAe" target="_blank" rel="noopener noreferrer">COMPRAR</a><div class="contact">FALE COM O SABIO</div></article>
+<article class="card vip-card"><h3>VIP Bronze</h3><div class="price">R$ 15 <small>/ único</small></div><a class="buy" href="https://discord.gg/TqkuabrAe" target="_blank" rel="noopener noreferrer">COMPRAR</a><div class="contact">FALE COM O SABIO</div></article>
+<article class="card vip-card"><h3>VIP Básico</h3><div class="price">R$ 10 <small>/ único</small></div><a class="buy" href="https://discord.gg/TqkuabrAe" target="_blank" rel="noopener noreferrer">COMPRAR</a><div class="contact">FALE COM O SABIO</div></article>
+</div>
+</section>
+
+<section id="favelas">
+<div class="section-head"><div class="eyebrow">Conheça as regiões</div><h2>Favelas</h2><p>Regiões e organizações presentes no universo do servidor.</p></div>
+<div class="faction-grid">
+<div class="faction-group cv"><h3>CV <span style="color:#ed2939">[VERMELHA]</span></h3><div class="card"><div class="faction"><i class="dot"></i><div><strong>Penha</strong></div></div><div class="faction"><i class="dot"></i><div><strong>Campinho</strong></div></div></div></div>
+<div class="faction-group tcp"><h3>TCP <span style="color:#f3c623">[AMARELO]</span></h3><div class="card"><div class="faction"><i class="dot"></i><div><strong>Cidade Alta</strong></div></div><div class="faction"><i class="dot"></i><div><strong>Serrinha</strong></div></div></div></div>
+<div class="faction-group ada"><h3>ADA <span style="color:#2787e8">[AZUL]</span></h3><div class="card"><div class="faction"><i class="dot"></i><div><strong>Conjuntão</strong></div></div></div></div>
+<div class="faction-group mlc"><h3>MLC <span style="color:#f28b26">[LARANJA]</span></h3><div class="card"><div class="faction"><i class="dot"></i><div><strong>Favela do Aço</strong></div></div></div></div>
+</div>
+</section>
+
+<section id="discord" style="text-align:center;padding-top:20px">
+<div class="section-head"><div class="eyebrow">Faça parte da comunidade</div><h2>Cola com a gente</h2><p>Acesse nosso Discord para novidades, suporte e informações do servidor.</p></div>
+<a class="btn discord" href="https://discord.gg/TqkuabrAe" target="_blank" rel="noopener noreferrer">ACESSAR DISCORD</a>
+</section>
+</main>
+<footer>crime carioca — todos direitos reservados © 2026</footer>
+</body>
+</html>
